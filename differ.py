@@ -29,12 +29,14 @@ def find_matches(old_string, new_string):
                   'prefix_12'
             'same_'        ''
             'same2'        '3'
-               |
-             'same'
+               |            |
+             'same'       '[3]'
             ''     '_'
             ''     '2'
+                    |
+                 '(_)[2]'
 
-        'same', 'prefix_12', '3_same_suffix'
+'same' '(_)' '[2]' 'prefix_12' '[3]' '3_same_suffix'
 
     """
 
